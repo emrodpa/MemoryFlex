@@ -1,0 +1,90 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneAppMemoryFlex.BasicPageTestScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded" BackKeyPress="PhoneApplicationPage_BackKeyPress">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,0">
+            <TextBlock Text="MemoryFlex" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <!-- <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/> -->
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="gridLeft" Grid.Column="0" >
+
+            </Grid>
+
+            <Grid x:Name="gridImages" Grid.Column="1"  >
+
+
+            </Grid>
+
+            <Grid x:Name="gridIndicators" Grid.Column="2" HorizontalAlignment="Center">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="0" >
+                    <TextBlock x:Name="tbkPlayStatus" Foreground="Blue" Text=""  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="1" >
+                    <TextBlock x:Name="tbkGuess" Visibility="Collapsed" Foreground="Blue" Text=""  TextWrapping="Wrap" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="2" >
+                    <TextBlock Text="Chances Left:"   />
+                    <TextBlock x:Name="tbkChancesLeft" Text="" Margin="10,0,0,0"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="3" >
+                    <TextBlock Text="Time:"   />
+                    <TextBlock x:Name="tbkTimeLeft" Text="" Margin="10,0,0,0"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Grid.Row="4"  >
+                    <StackPanel Orientation="Vertical">
+                        <Button x:Name="btnStopPlaying" Content="End Play" Click="btnStopPlaying_Click"  IsEnabled="True" Visibility="Visible"   />
+                        <Button x:Name="btnNewPlay" Content="Play Again" Click="btnNewPlay_Click" IsEnabled="False" Visibility="Collapsed" Foreground="Blue"   />
+                    </StackPanel>
+                    <Button x:Name="btnPlaySequence" Content="View Sequence" Click="btnPlaySequence_Click" IsEnabled="False" Visibility="Collapsed" Foreground="Blue"  />
+                    <Image x:Name="imgHolder" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="200"/>
+                </StackPanel>
+            </Grid>
+            
+        </Grid>
+        
+    </Grid>
+        
+        
+
+</phone:PhoneApplicationPage>

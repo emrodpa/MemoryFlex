@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<playlevels>
+  <playlevel>
+    <levelid>0</levelid>
+    <NumberFiguresInSequence>3</NumberFiguresInSequence>
+    <IntervalBetweenFigures>1000</IntervalBetweenFigures>
+    <!-- In Milliseconds -->
+    <NumberOfRows>5</NumberOfRows>
+    <NumberOfColumns>4</NumberOfColumns>
+    <MaxPLayChances>5</MaxPLayChances>
+    <MaximumPlayTimeInSeconds>15</MaximumPlayTimeInSeconds>    
+  </playlevel>
+  <playlevel>
+    <levelid>1</levelid>
+    <NumberFiguresInSequence>4</NumberFiguresInSequence>
+    <IntervalBetweenFigures>700</IntervalBetweenFigures>
+    <!-- In Milliseconds -->
+    <NumberOfRows>5</NumberOfRows>
+    <NumberOfColumns>5</NumberOfColumns>
+    <MaxPLayChances>7</MaxPLayChances>
+    <MaximumPlayTimeInSeconds>15</MaximumPlayTimeInSeconds>
+  </playlevel>
+  <playlevel>
+    <levelid>2</levelid>
+    <NumberFiguresInSequence>5</NumberFiguresInSequence>
+    <IntervalBetweenFigures>500</IntervalBetweenFigures>
+    <!-- In Milliseconds -->
+    <NumberOfRows>6</NumberOfRows>
+    <NumberOfColumns>5</NumberOfColumns>
+    <MaxPLayChances>7</MaxPLayChances>
+    <MaximumPlayTimeInSeconds>17</MaximumPlayTimeInSeconds>
+  </playlevel>
+  <playlevel>
+    <levelid>3</levelid>
+    <NumberFiguresInSequence>6</NumberFiguresInSequence>
+    <IntervalBetweenFigures>500</IntervalBetweenFigures>
+    <!-- In Milliseconds -->
+    <NumberOfRows>6</NumberOfRows>
+    <NumberOfColumns>7</NumberOfColumns>
+    <MaxPLayChances>7</MaxPLayChances>
+    <MaximumPlayTimeInSeconds>20</MaximumPlayTimeInSeconds>
+  </playlevel>
+</playlevels>

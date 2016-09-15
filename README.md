@@ -1,5 +1,6 @@
 # MemoryFlex
 Memory exercising game.
-Solutions contains Windows Store app "winappMemoryFlexer" and Windows Phone app "PhoneAppMemoryFlex"
-Main core code is in class libraries: "PlayLib" and "ErrorHandlingLib"
+Main core code is in two class libraries: "PlayLib" and "ErrorHandlingLib"
+Solution contains project Windows Store app "winappMemoryFlexer" and project Windows Phone app "PhoneAppMemoryFlex"
+
 
